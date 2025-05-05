@@ -20,7 +20,7 @@ prepare() {
 
 package() {
     cd "${srcdir}/amnezia-client"
-    # QT_BIN_DIR=/lib/qt6/bin ./deploy/build_linux.sh
+    QT_BIN_DIR=/lib/qt6/bin ./deploy/build_linux.sh
 
     # # Create the installation directory
     install -Dm755 -d "${pkgdir}/opt/${pkgname}"
